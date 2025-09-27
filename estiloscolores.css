@@ -1,0 +1,355 @@
+body {
+    margin: 0;
+    font-family: 'Baloo 2', cursive;
+    background: linear-gradient(to bottom, #8ee7f0, #fef9c3);
+    color: #333;
+}
+
+header {
+    background: #ff914d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #2a9d8f;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    margin: 10px 0 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px #046865;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    background: #2a9d8f;
+    padding: 10px 15px;
+    border-radius: 12px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+nav ul li:hover {
+    background: #21867a;
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 30px;
+}
+
+#episodios ol {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 12px;
+    max-width: 400px;
+}
+
+#episodios section {
+    margin-top: 20px;
+}
+
+#episodios iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 12px;
+    border: 3px solid #ff914d;
+}
+
+#episodios .lista-episodios {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    width: fit-content;
+    margin-bottom: 25px;
+}
+
+#episodios .lista-episodios a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+#episodios .lista-episodios a:hover {
+    color: darkorange;
+}
+
+#episodios .episodios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+
+#episodios .episodio {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+
+#episodios .episodio:hover {
+    transform: scale(1.02);
+}
+
+#episodios .episodio iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    border: 3px solid orange;
+}
+
+#personajes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+#personajes .personaje {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    border: 3px solid #2a9d8f;
+}
+
+#personajes img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 12px;
+}
+
+#contacto form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 3px solid #ff914d;
+}
+
+#contacto input, 
+#contacto textarea {
+    border: 2px solid #2a9d8f;
+    border-radius: 20px;
+    padding: 12px;
+    font-family: 'Baloo 2', cursive;
+}
+
+#contacto input[type="submit"] {
+    background: #2a9d8f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contacto input[type="submit"]:hover {
+    background: #21867a;
+}
+
+#contacto .contact-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+#contacto .side-img {
+    width: 320px; 
+    height: auto;
+}
+
+footer {
+    background: #2a9d8f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top: 5px solid #ff914d;
+    margin-top: 30px;
+}
+
+.footer3 {
+    background: #1c5d5b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top: 5px solid #ff914d;
+    margin-top: 30px;
+}
+
+#index main {
+    display: flex;
+    align-items: center;       
+    justify-content: center;    
+    gap: 40px;
+    padding: 30px;
+    max-width: 1100px;           
+    margin: 0 auto;             
+    flex-wrap: wrap;             
+}
+
+#index main img {
+    width: 320px;                
+    height: auto;
+    border-radius: 15px;
+    border: 4px solid #ff914d;
+}
+
+#index main img:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#index img {
+    display: block;
+    margin: 20px auto;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 20px;
+    border: 5px solid #2a9d8f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#index main div {
+    flex: 1 1 520px;             
+    max-width: 680px;
+    background: rgba(255,255,255,0.9);
+    padding: 24px;
+    border-radius: 15px;
+}
+
+#index main h3 {
+    margin-top: 20px;
+    color: #ff914d;
+}
+
+#index main a {
+    display: block;
+    margin-bottom: 8px; 
+    color: #2a9d8f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#index main a:hover {
+    text-decoration: underline;
+}
+
+#index header {
+    background: #ff914d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #2a9d8f;
+}
+
+#index header h1 {
+    margin: 10px 0 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px #046865;
+}
+
+#index nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#index nav ul li {
+    background: #2a9d8f; 
+    padding: 10px 15px;
+    border-radius: 12px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+#index nav ul li:hover {
+    background: #21867a;
+    transform: scale(1.1);
+}
+
+#index nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#index footer {
+    background: #2a9d8f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top: 5px solid #ff914d;
+    margin-top: 30px;
+}
+
+.imagenes {
+    border: 5px solid #ff914d;
+}
+
+.imagenes:hover {
+    opacity: 0.9; 
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 900px) {
+    body { font-size: 1rem; }
+
+    #index main {
+        gap: 25px;
+        padding: 20px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    body { font-size: 0.95rem; }
+    header h1, #index header h1 { font-size: 1.6rem; }
+
+    main, #index main {
+        padding: 20px;
+    }
+
+    #episodios .episodios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #index main img,
+    #contacto .side-img {
+        max-width: 90%;
+        height: auto;
+    }
+}
