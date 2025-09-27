@@ -353,3 +353,40 @@ footer {
         height: auto;
     }
 }
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;     /* achicar título para que no rompa */
+    margin-bottom: 15px;   /* un poco de espacio debajo del título */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;   /* centra cada item */
+    gap: 10px;             /* menos espacio entre botones */
+    padding: 0;
+    margin-top: 10px;      /* separa del título */
+  }
+
+  nav ul li {
+    width: 80%;            /* cada botón ocupa casi todo el ancho */
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: block;        /* que el enlace sea toda la caja */
+    padding: 12px 0;       /* más alto, más fácil de tocar */
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  nav ul li {
+    width: 90%;
+  }
+}
+
